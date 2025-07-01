@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Sign In</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="box">
+    <img src="google.jpg" alt="Google Logo" class="googleimg" />
+    <h2>Sign in</h2>
+
+    <form action="connect.php" method="post">
+      <div class="inputbox">
+        <input type="email" placeholder="Enter your email" name="email" required />
+      </div>
+      <div class="inputbox">
+        <input type="password" placeholder="Enter your password" name="password" id="password" required />
+      </div>
+
+      <div class="remforgot">
+        <label><input type="checkbox" id="showpassword" /> Show password</label>
+      </div>
+
+      <div class="forgot">
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <div class="inputbox">
+        <input type="submit" value="Sign in" class="button" />
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

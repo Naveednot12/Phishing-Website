@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <h1>API UI</h1>
+    <div>
+        <h2>Get all Users</h2>
+        <button onclick="getallusers()">Get all Users</button>
+    </div>
+    <div>
+        <h2>Get User</h2>
+        <input type="text" id="getuserid" placeholder="User Id">
+        <button onclick="getuser()">Get User</button>
+    </div>
+    <div>
+        <h2>Inser User</h2>
+        <input type="text" id="addemail" placeholder="Email">
+        <input type="text" id="addpassword" placeholder="Password">
+        <button onclick="insertuser()">Insert User</button>
+    </div>
+    <div>
+        <h2>Update User</h2>
+        <input type="text" id="updateuserid" placeholder="User Id">
+        <input type="text" id="updateemail" placeholder="Email">
+        <input type="text" id="updatepassword" placeholder="Password">
+        <button onclick="updateuser()">Update User</button>
+    </div>
+    <div>
+        <h2>Delete User</h2>
+        <input type="text" id="deleteuserid" placeholder="User Id">
+        <button onclick="deleteuser()">Delete User</button>
+    </div>
+    <div id="response"></div>
+    <script src="api.js"></script>
+</body>
+</html>
